@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Git Push Explained</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 30px; background: #f4f4f4; }
+    h1 { color: #e44d26; }
+    .box { background: white; border-radius: 8px; padding: 20px; margin: 15px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    code { background: #272822; color: #f8f8f2; padding: 10px 15px; display: block; border-radius: 5px; font-size: 16px; margin: 10px 0; }
+    .arrow { text-align: center; font-size: 30px; color: #e44d26; }
+    .flex { display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap; }
+    .repo { text-align: center; padding: 20px; border-radius: 8px; width: 150px; }
+    .local { background: #d4edda; border: 2px solid #28a745; }
+    .remote { background: #cce5ff; border: 2px solid #007bff; }
+  </style>
+</head>
+<body>
+
+  <h1>🔀 Git Push</h1>
+
+  <div class="box">
+    <h2>What is <code>git push</code>?</h2>
+    <p>It uploads your local commits to a remote repository (like GitHub, GitLab, or Bitbucket).</p>
+  </div>
+
+  <div class="box">
+    <h2>How it works</h2>
+    <div class="flex">
+      <div class="repo local">💻<br><strong>Local Repo</strong><br>(your computer)</div>
+      <div class="arrow">➡️ git push</div>
+      <div class="repo remote">☁️<br><strong>Remote Repo</strong><br>(GitHub etc.)</div>
+    </div>
+  </div>
+
+  <div class="box">
+    <h2>Basic Syntax</h2>
+    <code>git push &lt;remote&gt; &lt;branch&gt;</code>
+    <code>git push origin main</code>
+  </div>
+
+  <div class="box">
+    <h2>Common Commands</h2>
+    <p><strong>Push to main branch:</strong></p>
+    <code>git push origin main</code>
+    <p><strong>Push a new branch for the first time:</strong></p>
+    <code>git push -u origin my-branch</code>
+    <p><strong>Force push (use carefully!):</strong></p>
+    <code>git push --force</code>
+  </div>
+
+  <div class="box">
+    <h2>Typical Workflow</h2>
+    <code>git add .</code>
+    <code>git commit -m "your message"</code>
+    <code>git push origin main</code>
+  </div>
+
+</body>
+</html>
